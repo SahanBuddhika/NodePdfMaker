@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 //index route
 app.get('/',(req , res)=>{
-    res.send('Hello World');
+    res.sendfile('index.html');
 });
 
 app.listen(port , () => {

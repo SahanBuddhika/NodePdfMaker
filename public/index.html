@@ -3,12 +3,29 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Document</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
-<body>
-    
-</body>
-</html>>
+    <body>
+        <p>Please Enter Your FirstName and LastName</p>
+        <form method="POST" action="pdfMake\pdf">
+
+            <label for="textFirstName">First Name:</label>
+            <input type="text" id="tetxFirstName" name="fname">
+
+            <br>
+            <br>
+
+            <label for="textLastName">Last Name:</label>
+            <input type="text" id="textLastName" name="lname">
+
+            <br>
+            <br>
+
+            <button type="submit">Create Pdf</buttom>
+        
+        </form>
+    </body>
+</html>
