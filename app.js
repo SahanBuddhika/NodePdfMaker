@@ -17,6 +17,10 @@ app.get('/',(req , res)=>{
     res.sendfile('index.html');
 });
 
+const pdfRoute = require("./routes/pdfmake");
+app.use('/pdfMake', pdfRoute);
+ 
+
 app.listen(port , () => {
     console.log(`Server running at http://localhost:${port}/`);
 });
